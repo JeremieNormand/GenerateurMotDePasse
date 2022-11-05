@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Mot de Passe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Générateur de Mot de Passe</h1>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <div>
+                    <p>Mot de Passe</p>
+                </div>
+                <div>
+                    <input id="passwordOutput" type="text">
+                </div>
+            </article>
+            <article>
+                <a id="generateBtn" onclick="onClickGenerate()">Générer</a>
+            </article>
+            <article>
+                <div>
+                    <p>Longueur</p>
+                </div>
+                <div>
+                    <input id="lengthInput" placeholder="> 8" type="text">
+                </div>
+            </article>
+            <article>
+                <div>
+                    <p><a id="lowercasesBtn" onclick="onClickToggleLowercases()">Minuscules</a></p>
+                    <p><a id="uppercasesBtn" onclick="onClickToggleUppercases()">Majuscules</a></p>
+                </div>
+                <div>
+                    <p><a id="digitsBtn" onclick="onClickToggleDigits()">Chiffres</a></p>
+                    <p><a id="symbolsBtn" onclick="onClickToggleSymbols()">Symboles</a></p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Jérémie Normand - 2022</p>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
